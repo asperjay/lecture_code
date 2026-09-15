@@ -25,7 +25,7 @@ export function render(offering: Offering, customer: Customer): string {
 		pad("Customer", 14) + customer.label(),
 		pad("Program", 14) + offering.program.title,
 		pad("Offering", 14) + `${offering.id} (${offering.season} ${offering.year})`,
-		pad("Instructor", 14) + offering.instructor.name,
+		pad("Instructor", 14) + offering.instructor.lastName,
 		pad("Location", 14) + (centre === undefined ? "?" : `${centre.name}, ${centre.address}`),
 		"",
 		pad("Base fee", 14) + "$" + offering.fee.toFixed(2),

@@ -57,7 +57,7 @@ export class Offering {
 			case "id":
 				return this.id;
 			case "instructor":
-				return this.instructor.name;
+				return this.instructor.lastName;
 			case "year":
 				return this.year;
 			case "fee":

@@ -113,7 +113,7 @@ let centres: Centre[] | undefined = undefined;
 
 export function loadInstructors(): Instructor[] {
 	if (instructors === undefined) {
-		instructors = INSTRUCTORS.map((row) => new Instructor(row[0], row[1], row[2]));
+		instructors = INSTRUCTORS.map((row) => new Instructor(row[0], row[1].split(/\s+/)[0], row[1].split(/\s+/)[1], row[2]));
 	}
 	return instructors;
 }

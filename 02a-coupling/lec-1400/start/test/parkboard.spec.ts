@@ -45,7 +45,8 @@ describe("catalogue", () => {
 
 	it("Test 7: attaches an instructor object, not a name", () => {
 		expect(offering("AQ-201-A").instructor).to.be.instanceOf(Instructor);
-		expect(offering("AQ-201-A").instructor.name).to.equal("Virginia Woolf");
+		expect(offering("AQ-201-A").instructor.firstName).to.equal("Virginia");
+		expect(offering("AQ-201-A").instructor.lastName).to.equal("Woolf");
 	});
 
 	it("Test 8: attaches registered customers", () => {
